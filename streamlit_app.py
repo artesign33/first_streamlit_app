@@ -13,7 +13,7 @@ streamlit.dataframe(my_fruit_list)
 # streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index))
 # streamlit.multiselect("Pick some fruits:", list(my_fruit_list.Fruit))
 # error. selected_fruits = a.multiselect("Pick some fruits:", options=list(my_fruit_list.index), default=["Avocado", "Strawberries"])
- fruits_selected = streamlit.multiselect("Pick some fruits:", list(my_fruit_list.Fruit), default=["Avocado", "Strawberries"])
+fruits_selected = streamlit.multiselect("Pick some fruits:", list(my_fruit_list.Fruit), default=["Avocado", "Strawberries"])
 my_fruit_list = my_fruit_list.set_index('Fruit')
 
 fruits_to_show = my_fruit_list.loc[fruits_selected]
