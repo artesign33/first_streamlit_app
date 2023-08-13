@@ -52,7 +52,8 @@ import snowflake.connector
 # streamlit.text("Hello from Snowflake:")
 # streamlit.text(my_data_row)
 
-
+# dont go past here
+streamlit.stop()
 
 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
