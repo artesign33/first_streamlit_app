@@ -51,6 +51,9 @@ import snowflake.connector
 # streamlit.text("Hello from Snowflake:")
 # streamlit.text(my_data_row)
 
+fruit_choice = streamlit.text_input('What fruit would you like to add?','jackfruit')
+streamlit.write('Thanks for adding ', fruit_choice)
+
 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
